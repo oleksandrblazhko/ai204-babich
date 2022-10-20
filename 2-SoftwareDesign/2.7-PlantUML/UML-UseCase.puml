@@ -1,1 +1,33 @@
+@startuml
+title Relation Schema
+hide circle
+entity "Administrator" as administator {
+  (PK)administrator_id 
+  --
+  administrators_name 
+  surname 
+}
 
+entity "User" as user {
+  (PK)user_id
+  --
+  user_name
+  surname
+  email
+}
+
+entity "architectural_projects" as architecturalProjects {
+  (PK)architectural_project_id
+  --
+  project_name
+  description
+  project_image
+  author VARCHAR,
+  (FK) administrator_id
+  (FR) user_id
+}
+
+user --{ architecturalProjects
+administator --{ architecturalProjects
+
+@enduml

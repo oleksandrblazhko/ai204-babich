@@ -1,1 +1,10 @@
+@startuml
+title Classes Diagram
 
+Class Administrator
+Class User
+Class Architectural_project
+
+Administrator "1" -up-> "+" Architectural_project : check
+User"1" -up-> "+"Architectural_project : add
+@enduml

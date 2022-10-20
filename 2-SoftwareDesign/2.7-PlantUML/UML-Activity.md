@@ -1,16 +1,1 @@
-@startuml
-title Conditional - Activity Diagram 
-
-start
-:The user forms and submits his architectural project;
-:The administrator checks the correctness and expediency of the project;
-if (Is the project formed correctly?) then (Yes)
-  :The project has been published!;
-else (No)
-  :The project is formed incorrectly!;
-endif
-stop
-
-@enduml
-
-
+![](http://www.plantuml.com/plantuml/proxy?cache=https://raw.githubusercontent.com/oleksandrblazhko/ai204-babich/laboratory-work-7/2-SoftwareDesign/2.7-PlantUML/UML-Activity.puml) 

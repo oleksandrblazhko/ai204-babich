@@ -5,6 +5,7 @@ Class Administrator
 Class User
 Class Architectural_project
 
-Administrator "1" -up-> "+" Architectural_project : check
+
+User <|-- Administrator
 User"1" -up-> "+"Architectural_project : add
 @enduml

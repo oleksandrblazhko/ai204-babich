@@ -1,11 +1,10 @@
 /* Створення об'єктного типу (класу) User */
 CREATE OR REPLACE TYPE User AS OBJECT (
-
 	user_id NUBMER(4), --N користувача
 	user_name VARCHAR(30), -- ім'я користувача
 	surname VARCHAR(30), -- призвище користувача
-  email VARCHAR CHECK(email ~* '^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$'), -- пошта користувача
-  NOT FINAL MEMBER PROCEDURE display
+  	email VARCHAR(50), -- пошта користувача
+  	NOT FINAL MEMBER PROCEDURE display
 ) NOT FINAL 
 /
 

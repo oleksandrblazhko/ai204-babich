@@ -71,7 +71,6 @@ CREATE OR REPLACE TYPE Architectural_project AS OBJECT (
   architectural_project_id NUMBER(10) ,
 	project_name VARCHAR(60),
 	description VARCHAR(2000),
-	project_image bytea,
 	author VARCHAR(60),
 	administrator_id NUMBER(4),
 	user_id NUMBER(4)

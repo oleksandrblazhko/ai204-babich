@@ -1,6 +1,6 @@
 /* Створення об'єктного типу (класу) User */
-CREATE OR REPLACE TYPE User AS OBJECT (
-	user_id NUBMER(4), --N користувача
+CREATE OR REPLACE TYPE Users_ AS OBJECT (
+	user_id NUMBER(4), --N користувача
 	user_name VARCHAR(30), -- ім'я користувача
 	surname VARCHAR(30), -- призвище користувача
   	email VARCHAR(50), -- пошта користувача

@@ -9,7 +9,7 @@ CREATE OR REPLACE TYPE Users_ AS OBJECT (
 /
 
 /* Cтворення об'єктного типу (класу) Administator, що успадковує об'єктний тип User */
-CREATE OR REPLACE TYPE Administator UNDER User (
+CREATE OR REPLACE TYPE Administator UNDER Users_ (
   administrator_id NUMBER(4), -- N адміністратора
 	administrators_name VARCHAR(30), --ім'я адміністратора 
 	surname VARCHAR(30) -- призвище адміністратора
